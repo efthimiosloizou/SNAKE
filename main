@@ -31,7 +31,7 @@ def play_game(stdscr: curses.window) -> None:
     height, width = stdscr.getmaxyx()
 
     snake = [(height // 2, width // 2 + i) for i in range(3)][::-1]
-    direction = LEFT
+    direction = RIGHT
     food = place_food(height, width, snake)
     score = 0
 
